@@ -3,10 +3,18 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Field, Item
 
 
-class ScrapyWorkuaItem(scrapy.Item):
+class ScrapyWorkuaItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+# A class is created to define the structure of the fields.
+class PeopleItem(Item):
+    applicant_name = Field()
+    applicant_old = Field()
+    applicant_position = Field()
+    detail_info = Field()
