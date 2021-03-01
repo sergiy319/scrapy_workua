@@ -1,13 +1,16 @@
 [tool.poetry]
-name = "scraper_workua"
+name = "scrapy_workua"
 version = "0.1.0"
 description = ""
 authors = ["Sergiy Naumov <1414sergiy@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+Scrapy = "^2.4.1"
+flake8 = "^3.8.4"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
